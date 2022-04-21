@@ -8,3 +8,13 @@ We decided to explore two solutions :
 
 We need to quantify the cells on images like this :
 ![exemple](https://user-images.githubusercontent.com/71750909/164416508-9a5814de-7389-4406-82e7-7c3a833b027c.png)
+
+### The YOLOv5 Architecture
+
+[ ] _Oui_
+[ ] **Oui**
+[x] Non
+
+### The Fiji Software
+
+> Voici le code à exécuter
