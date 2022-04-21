@@ -10,8 +10,10 @@ def gather_images(source, destination):
             os.mkdir(destination)
             print("Directory " , destination ,  " Created ") 
     except FileExistsError:
-            print("Directory " , destination ,  " already exists")
-
+            print("Directory " , destination ,  " already exists so it is reseted")
+            previous_images = os.listdir(destination)
+            for prevIm in previous_images : os.remove(destination+'/'+prevIm)
+            
 
 
     contenu = os.listdir(source + '/')
@@ -50,13 +52,11 @@ def gather_images(source, destination):
                             image = os.listdir(source_temp)[0]
                             source_image = source_temp + '/' + image
                             #if jour == jours[1] and champ == champs[1] and temp == temps[2] : print(source_image)
-                            print(source_image)
+                            #print(source_image)
 
                             dest = destination+'/' + jour + '_' + champ + '_' + temp + os.path.splitext(image)[1]
                             shutil.copyfile(source_image,dest)
 
                     except : print(f"NO IMAGE AT {source_image}")
+    print("Image transfering finished")
 
-
-def runAnalysis(folder):
-    !python detect.py --weights best_pokemon_19_01_14h29.pt --img 640 --conf 0.25 --source new_test 
