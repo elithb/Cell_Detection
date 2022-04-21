@@ -7,4 +7,4 @@ We decided to to explore two solutions :
 * Fiji from https://imagej.net/software/fiji/
 
 We need to quantify the nummber of cells on image like this :
-![alt text](https://github.com/elithb/Cell_Detection/blob/main/YOLOv5/exemple.png)
+![exemple](https://user-images.githubusercontent.com/71750909/164416508-9a5814de-7389-4406-82e7-7c3a833b027c.png)
