@@ -11,9 +11,9 @@ We need to quantify the cells on images like this :
 
 ### The YOLOv5 Architecture
 
-[ ] _Oui_
-[ ] **Oui**
-[x] Non
+- [x] _Oui_
+- [x] **Oui**
+- [ ] Non
 
 ### The Fiji Software
 
