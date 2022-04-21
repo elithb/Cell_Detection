@@ -4,19 +4,19 @@
 # parent
 # ├── yolov5
 # └── datasets
-#     └── coco128  ← downloads here
+#     └── coco128  ← downloads here (7 MB)
 
 
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
 #path: ../datasets/coco128  # dataset root dir
-train: ./pokemon_images/images/train  # train images (relative to 'path') 128 images
-val: ./pokemon_images/images/val # val images (relative to 'path') 128 images
+train: ../dataset/images/train  # train images (relative to 'path') 128 images
+val: ../dataset/images/val  # val images (relative to 'path') 128 images
 test:  # test images (optional)
 
 # Classes
-nc: 8  # number of classes
-names: ['pikachu','eevee','infernape','greninja','garchomp','staraptor','lucario','thundurus']  # class names
+nc: 1 # number of classes
+names: ['cell']  # class names
 
 
 # Download script/URL (optional)
-#download: https://ultralytics.com/assets/coco128.zip
+download: https://ultralytics.com/assets/coco128.zip
